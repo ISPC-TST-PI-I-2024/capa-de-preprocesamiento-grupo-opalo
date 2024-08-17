@@ -5,7 +5,7 @@
 **Materia:** Proyecto Integrador I  
 **Docente:** Cristian Gonzalo Vera  
 
-## Grupo: Nombre del Grupo
+## Grupo Opalo
 **Integrantes:**
 - Rodolfo Paz ([GitHub](https://github.com/Domi74))
 - Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03))
