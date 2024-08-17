@@ -7,14 +7,16 @@
 
 ## Grupo: Nombre del Grupo
 **Integrantes:**
-- Integrante 1 ([GitHub](https://github.com/integrante1))
-- Integrante 2 ([GitHub](https://github.com/integrante2))
-- Integrante 3 ([GitHub](https://github.com/integrante3))
-- Integrante 4 ([GitHub](https://github.com/integrante4))
-- Integrante 5 ([GitHub](https://github.com/integrante5))
-- Integrante 6 ([GitHub](https://github.com/integrante6))
-- Integrante 7 ([GitHub](https://github.com/integrante7))
-- Integrante 8 ([GitHub](https://github.com/integrante8))
+- Rodolfo Paz ([GitHub](https://github.com/Domi74))
+- Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03))
+- Vittorio Durigutti ([GitHub](https://github.com/vittoriodurigutti))
+- Nahuel Velez ([GitHub](https://github.com/Lucasmurua19))
+- Gustavo Zalazar ([GitHub](https://github.com/breaakerr))
+- Jose Marquez ([GitHub](https://github.com/marquezjose))
+- Luciano Lujan ([GitHub](https://github.com/lucianoilujan))
+- Lisandro Juncos ([GitHub](https://github.com/Lisandro-05))
+- Tiziano Paez ([GitHub](https://github.com/tpaez))
+- Joaquin Garzón ([GitHub](https://github.com/Joacogarzonn))
 
 ---
 
