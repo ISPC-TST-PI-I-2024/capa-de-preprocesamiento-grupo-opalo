@@ -108,3 +108,4 @@ Este proyecto est√° bajo la licencia ISPC. Consulta el archivo `LICENSE` para m√
 - [Manual de AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html)
 - [Fog Computing: Concepts, Architectures, and Applications](https://ieeexplore.ieee.org/document/7389486)
 - [Comparativa de Bases de Datos NoSQL](https://www.mongodb.com/nosql-explained)
+- https://wokwi.com/projects/406408244181384193 
