@@ -25,39 +25,38 @@
 ### Sistema IoT para la Gestión y Monitoreo de Cultivos Inteligentes
 
 ### Descripción del Proyecto:
-Este proyecto consiste en diseñar e implementar un sistema IoT que monitoree las condiciones ambientales de un cultivo, como temperatura, humedad y niveles de luz, y optimice el uso de recursos (agua, fertilizantes) mediante el uso de Edge y Fog Computing. El sistema debe ser capaz de procesar los datos localmente en dispositivos edge, aplicar lógicas de filtrado y normalización, y tomar decisiones en tiempo real para la automatización del riego y otras tareas cruciales. En una instancia superior, no cubierta, los datos procesados se transmitirían a la nube para su almacenamiento y análisis más profundo.
+Este proyecto busca desarrollar un sistema IoT para el monitoreo continuo de los niveles de glucosa en pacientes diabéticos, utilizando sensores no invasivos conectados a microcontroladores ESP32-Wroom. El sistema permitirá preprocesar los datos en el edge para tomar decisiones rápidas, reduciendo la dependencia de la nube, y mejorar la eficiencia en la transmisión y almacenamiento de datos. Los usuarios podrán acceder remotamente a la información, recibir alertas sobre niveles críticos de glucosa y tener un control preciso del sistema mediante una interfaz web o app.  
 
 ---
 
 ### Componentes del Proyecto:
 
 1. **Recolección de Datos (Capa de Percepción):**
-   - **Sensores:** Sensores conectados a microcontroladores ESP32-Wroom para recolectar datos sobre las condiciones del cultivo.
-   - **Ejemplos de sensores:** Sensores de humedad del suelo, temperatura y humedad del aire, y luz.
+   - **Sensores:** Sensores no invasivos para medir los niveles de glucosa en sangre  del paciente.
+   - **Microcontroladores ESP32-Wroom:** Los microcontroladores se encargan de recolectar datos de los sensores en tiempo real y enviarlos a la capa de procesamiento.  
 
 2. **Preprocesamiento de Datos en el Edge (Capa de Preprocesamiento):**
    - **Implementación de Microservicios en Edge:**
-     - Los microcontroladores ESP32-Wroom actuarán como nodos edge que procesarán los datos recolectados en tiempo real.
-     - Implementación de microservicios para filtrar datos (por ejemplo, eliminar lecturas anómalas) y normalizar las entradas antes de tomar decisiones automatizadas.
+     - Los microcontroladores ESP32-Wroom  actuarán como nodos edge, procesando los datos de glucosa en tiempo real.
+     - Se implementarán microservicios para filtrar datos, eliminar lecturas anómalas y normalizar las entradas antes de tomar decisiones automatizadas, como ajustar los parámetros de medición o emitir alertas.
    - **Toma de Decisiones en el Edge:**
-     - Basado en las condiciones recolectadas, el sistema puede activar actuadores (por ejemplo, sistemas de riego) para ajustar automáticamente las condiciones del cultivo.
-     - Lógica para tomar decisiones inmediatas sin necesidad de enviar datos a la nube, reduciendo latencia y mejorando la eficiencia del sistema.
+     - Basado en los datos recolectados, el sistema podrá tomar decisiones inmediatas, como activar alarmas si los niveles de glucosa están fuera de los rangos seguros.
+     - La lógica de toma de decisiones reducirá la latencia al evitar enviar todos los datos a la nube, mejorando la eficiencia del sistema y asegurando una respuesta rápida ante situaciones críticas.
 
 3. **Gestión de Datos en el Fog (Capa de Preprocesamiento):**
    - **Controladores Fog:**
-     - Un dispositivo fog (puede ser un microcontrolador más robusto o un pequeño servidor local) gestionará la integración de los datos provenientes de múltiples nodos edge.
-     - Implementación de APIs para la comunicación entre los nodos edge y la capa de almacenamiento.
+     - Un dispositivo fog más robusto o un servidor local gestionará la integración de los datos provenientes de múltiples nodos edge, consolidando la información de diferentes pacientes o sensores.
+     - APIs serán implementadas para la comunicación entre los nodos edge y la capa de almacenamiento en la nube o el servidor local.
    - **Filtrado y Normalización Avanzada:**
-     - El fog realiza un procesamiento adicional, como la agregación de datos de múltiples sensores o la ejecución de algoritmos más complejos que no pueden realizarse directamente en los dispositivos edge.
+     - El dispositivo fog ejecutará procesos de agregación de datos de múltiples sensores y aplicará algoritmos más complejos que no pueden realizarse en los dispositivos edge, mejorando la precisión de las lecturas y el análisis de tendencias en los niveles de glucosa.
 
 4. **Transmisión y Almacenamiento de Datos:**
    - **Optimización de la Transmisión:**
-     - Los datos preprocesados se transmiten eficientemente a la nube o a un servidor centralizado para su almacenamiento.
-     - Uso de técnicas para asegurar que solo los datos relevantes y necesarios se transmitan, optimizando el uso de ancho de banda y almacenamiento.
+     - Los datos preprocesados se transmitirán de manera eficiente a la nube o a un servidor centralizado solo cuando sea necesario, asegurando que se envíen únicamente los datos relevantes para optimizar el uso de ancho de banda y almacenamiento.  
 
 5. **Monitoreo y Control Remoto:**
-   - Los usuarios pueden monitorear las condiciones del cultivo y controlar el sistema remotamente a través de una aplicación web o móvil conectada a la nube.
-   - Se pueden generar alertas automáticas para condiciones críticas que requieren intervención humana.
+   - Los usuarios podrán monitorear los niveles de glucosa de manera remota a través de una aplicación web o app móvil conectada a la nube.
+   - El sistema también podrá generar alertas automáticas para niveles de glucosa críticos, notificando a los usuarios o cuidadores en tiempo real para intervención inmediata.
 
 ---
 
@@ -76,8 +75,8 @@ Este proyecto consiste en diseñar e implementar un sistema IoT que monitoree la
 
 ### Tecnologías Utilizadas:
 
-- **Microcontroladores:** ESP32-Wroom
-- **Sensores:** De humedad, temperatura, luz
+- **Microcontroladores:** ESP32-Wroom.
+- **Sensores:** Sensores de glucosa no invasivos.
 - **Frameworks:** C++ para el desarrollo de hardware y para la gestión de tareas en tiempo real.
 - **Herramientas de Desarrollo:** Visual Studio Code con PlatformIO
 - **Fog Computing:** Microcomputadoras, microservidores, etc.
