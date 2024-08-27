@@ -1,0 +1,66 @@
+{
+    "version": 1,
+    "author": "Luciano Lujan",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 28.8, "left": 72.04, "attrs": {} },
+      { "type": "wokwi-led", "id": "led1", "top": -90, "left": 3.8, "attrs": { "color": "red" } },
+      {
+        "type": "wokwi-led",
+        "id": "led2",
+        "top": -90,
+        "left": -34.6,
+        "attrs": { "color": "green" }
+      },
+      { "type": "wokwi-potentiometer", "id": "pot1", "top": -58.9, "left": 278.2, "attrs": {} },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": 14.4,
+        "left": -38.95,
+        "rotate": 90,
+        "attrs": { "value": "220" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r2",
+        "top": 24,
+        "left": -0.55,
+        "rotate": 90,
+        "attrs": { "value": "220" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r3",
+        "top": 23.15,
+        "left": -201.6,
+        "attrs": { "value": "1000" }
+      },
+      {
+        "type": "wokwi-pushbutton",
+        "id": "btn1",
+        "top": 86.3,
+        "left": -121.3,
+        "rotate": 90,
+        "attrs": { "color": "green" }
+      }
+    ],
+    "connections": [
+      [ "esp:TX", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX", "$serialMonitor:TX", "", [] ],
+      [ "pot1:SIG", "esp:34", "green", [ "v0" ] ],
+      [ "led2:A", "r1:1", "green", [ "v0" ] ],
+      [ "led1:A", "r2:1", "green", [ "v0" ] ],
+      [ "r2:2", "esp:26", "green", [ "h0", "v66" ] ],
+      [ "r1:2", "esp:27", "green", [ "h0", "v66" ] ],
+      [ "esp:GND.2", "led1:C", "black", [ "v0", "h28.8", "v-67.2", "h-19.2" ] ],
+      [ "led1:C", "led2:C", "black", [ "v28.8", "h-66.8" ] ],
+      [ "esp:GND.2", "pot1:GND", "black", [ "v0", "h28.8", "v19.2", "h38.4" ] ],
+      [ "esp:5V", "pot1:VCC", "red", [ "v19.2", "h153.75", "v-86.4", "h87.2" ] ],
+      [ "btn1:1.r", "esp:12", "green", [ "v0" ] ],
+      [ "btn1:2.r", "esp:GND.1", "green", [ "v0" ] ],
+      [ "r3:2", "btn1:1.l", "green", [ "v0", "h66" ] ],
+      [ "r3:1", "esp:5V", "green", [ "v211.2", "h9.6" ] ]
+    ],
+    "dependencies": {}
+  }
