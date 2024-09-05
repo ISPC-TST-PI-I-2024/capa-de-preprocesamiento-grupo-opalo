@@ -13,12 +13,12 @@
 **Integrantes:**
 - Vittorio Durgutti ([GitHub](https://github.com/vittoriodurigutti))
 - Luciano Lujan ([GitHub](https://github.com/lucianoilujan))
-- Rodolfo Paz (GitHub) ([GitHub](https://github.com/Domi74)
+- Rodolfo Paz ([GitHub](https://github.com/Domi74))
 - Jose Marquez ([GitHub](https://github.com/marquezjose))
 - Joaquin Garzon ([GitHub](https://github.com/Joacogarzonn))
 - Lisandro Juncos ([GitHub](https://github.com/Lisandro-05))
 - Nahuel Velez ([GitHub](https://github.com/Lucasmurua19))
-- Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03)
+- Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03))
 
 ---
 
