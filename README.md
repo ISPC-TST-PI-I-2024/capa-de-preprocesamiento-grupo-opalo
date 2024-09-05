@@ -124,7 +124,9 @@ o	El panel táctil permitirá a los usuarios encender el dispositivo y posibleme
 
 ---
 
-
+### Diagrama de conexión
+![Diagrama](/E%20Recursos/Diagrama-de-conexion.png)
+---
 
 
 
