@@ -4,14 +4,14 @@
   ## Profesor: CRISTIAN GONZALO VERA
   ## Integrantes:
 
-    Vittorio Durgutti
-    Luciano Lujan
-    Integrante 3 
-    Jose Marquez  
-    Joaquin Garzon  
-    Lisandro Juncos  
-    Nahuel Velez  
-    Integrante 8  
+- Vittorio Durgutti ([GitHub](https://github.com/vittoriodurigutti))
+- Luciano Lujan ([GitHub](https://github.com/lucianoilujan))
+- Rodolfo Paz (GitHub) ([GitHub](https://github.com/Domi74))
+- Jose Marquez ([GitHub](https://github.com/marquezjose))
+- Joaquin Garzon ([GitHub](https://github.com/Joacogarzonn))
+- Lisandro Juncos ([GitHub](https://github.com/Lisandro-05))
+- Nahuel Velez ([GitHub](https://github.com/Lucasmurua19))
+- Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03))
 
 
 # Proyecto IoT: Prototipo de Dispositivo para Monitoreo de Glucosa

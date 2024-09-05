@@ -1,18 +1,22 @@
-![alt text](/E%20Recursos/caratula.png)
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/YwamQM3c)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15533872&assignment_repo_type=AssignmentRepo)
+
+![Caratula](../capa-de-preprocesamiento-grupo-opalo/E%20Recursos/caratulaPI.png)
 
 # Proyecto "Dispositivo IoT para Monitoreo Continuo de Glucosa en Pacientes Diabéticos"
   
   ## Profesor: CRISTIAN GONZALO VERA
   ## Integrantes:
 
-    Vittorio Durgutti
-    Luciano Lujan
-    Integrante 3 
-    Jose Marquez  
-    Joaquin Garzon  
-    Lisandro Juncos  
-    Nahuel Velez  
-    Integrante 8  
+- Vittorio Durgutti ([GitHub](https://github.com/vittoriodurigutti))
+- Luciano Lujan ([GitHub](https://github.com/lucianoilujan))
+- Rodolfo Paz (GitHub) ([GitHub](https://github.com/Domi74))
+- Jose Marquez ([GitHub](https://github.com/marquezjose))
+- Joaquin Garzon ([GitHub](https://github.com/Joacogarzonn))
+- Lisandro Juncos ([GitHub](https://github.com/Lisandro-05))
+- Nahuel Velez ([GitHub](https://github.com/Lucasmurua19))
+- Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03))
+
    
 
 ##  Descripción del Proyecto:
@@ -23,12 +27,14 @@ El proyecto consiste en el desarrollo de un dispositivo IoT avanzado diseñado p
 
 ### 1. Recoleccion de datos (capa de percepción):
 - Sensor de Glucosa: Un sensor preciso y confiable que mide los niveles de glucosa en la sangre. Puede ser un parche de detección continua o un dispositivo mínimamente invasivo que se coloca en la piel del paciente. Estos sensores estarán conectados a microcontroladores ESP32-Wroom para recolectar datos sobre los niveles de glucosa de cada paciente.
-    #### Los tipos de sensores pueden ser:
-	- Parche de detección continua.
+    #### Los tipos de sensores pueden ser:  
+
+	- Sensor Optico Reflectivo Infrarrojo CNY70.  
+
 	- Sensor NIR (técnica espectroscópica que utiliza de forma natural el espectro electromagnético).
 
 ### 2. Preprocesamiento de Datos en el Edge (Capa de Preprocesamiento):
-Módulo de Conectividad IoT: Un módulo ESP32 Wroom que permite la conexión del sensor con una plataforma en la nube. Esto puede incluir conectividad Wi-Fi, Bluetooth, LoRaWan o redes móviles (2G/3G/4G/5G).
+**Módulo de Conectividad IoT:** Un módulo ESP32 Wroom que permite la conexión del sensor con una plataforma en la nube. Esto puede incluir conectividad Wi-Fi, Bluetooth, LoRaWan o redes móviles (2G/3G/4G/5G).
 Los microcontroladores ESP32-Wroom actuarán como nodos edge que procesarán los datos recolectados en tiempo real.
 
 

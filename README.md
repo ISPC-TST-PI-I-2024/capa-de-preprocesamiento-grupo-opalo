@@ -1,166 +1,130 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/YwamQM3c)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15533872&assignment_repo_type=AssignmentRepo)
+
+![Caratula](../capa-de-preprocesamiento-grupo-opalo/E%20Recursos/caratulaPI.png)
 # Proyecto Integrador I 
 
 ## Instituto: ISPC  
-**Carrera:** ![Tecnicatura Superior en Telecomunicaciones](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Telecommunications_Tower_at_McMurdo_Station_007.jpg/800px-Telecommunications_Tower_at_McMurdo_Station_007.jpg)  
+**Carrera:** [Tecnicatura Superior en Telecomunicaciones](https://www.ispc.edu.ar/tecnicatura-superior-en-telecomunicaciones/)  
 **Materia:** Proyecto Integrador I  
-**Docente:** Cristian Gonzalo Vera  
+**Docente:** Cristian Gonzalo Vera
 
-## Grupo Opalo
+## Grupo: OPALO <img src="https://stardewvalleywiki.com/mediawiki/images/3/3c/Opal.png"  width="10%" height="100%">
 **Integrantes:**
-- Rodolfo Paz ([GitHub](https://github.com/Domi74))
-- Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03))
-- Vittorio Durigutti ([GitHub](https://github.com/vittoriodurigutti))
-- Nahuel Velez ([GitHub](https://github.com/Lucasmurua19))
-- Gustavo Zalazar ([GitHub](https://github.com/breaakerr))
-- Jose Marquez ([GitHub](https://github.com/marquezjose))
+- Vittorio Durgutti ([GitHub](https://github.com/vittoriodurigutti))
 - Luciano Lujan ([GitHub](https://github.com/lucianoilujan))
+- Rodolfo Paz (GitHub) ([GitHub](https://github.com/Domi74)
+- Jose Marquez ([GitHub](https://github.com/marquezjose))
+- Joaquin Garzon ([GitHub](https://github.com/Joacogarzonn))
 - Lisandro Juncos ([GitHub](https://github.com/Lisandro-05))
-- Tiziano Paez ([GitHub](https://github.com/tpaez))
-- Joaquin Garzón ([GitHub](https://github.com/Joacogarzonn))
+- Nahuel Velez ([GitHub](https://github.com/Lucasmurua19))
+- Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03)
 
 ---
 
 ## Capa de Preprocesamiento 
 
-### Sistema IoT para la Gestión y Monitoreo de Cultivos Inteligentes
+### Sistema IoT para un dispositivo Medidor de Glucosa
 
 ### Descripción del Proyecto:
-Este proyecto busca desarrollar un sistema IoT para el monitoreo continuo de los niveles de glucosa en pacientes diabéticos, utilizando sensores no invasivos conectados a microcontroladores ESP32-Wroom. El sistema permitirá preprocesar los datos en el edge para tomar decisiones rápidas, reduciendo la dependencia de la nube, y mejorar la eficiencia en la transmisión y almacenamiento de datos. Los usuarios podrán acceder remotamente a la información, recibir alertas sobre niveles críticos de glucosa y tener un control preciso del sistema mediante una interfaz web o app.  
+El proyecto consiste en el desarrollo de un medidor de glucosa IoT que utiliza un microcontrolador ESP32, un sensor óptico CNY 70 y un panel táctil para el encendido y control del dispositivo. Este medidor será capaz de capturar y procesar los niveles de glucosa en sangre, y enviar la información a una plataforma en la nube para su almacenamiento y análisis. El objetivo es proporcionar un dispositivo compacto, fácil de usar y conectado, que permita a los usuarios monitorear sus niveles de glucosa en tiempo real y acceder a sus datos desde cualquier lugar.
 
 ---
 
 ### Componentes del Proyecto:
 
-1. **Recolección de Datos (Capa de Percepción):**
-   - **Sensores:** Sensores no invasivos para medir los niveles de glucosa en sangre  del paciente.
-   - **Microcontroladores ESP32-Wroom:** Los microcontroladores se encargan de recolectar datos de los sensores en tiempo real y enviarlos a la capa de procesamiento.  
+Componentes Principales
+1.	**Microcontrolador ESP32**  
 
-2. **Preprocesamiento de Datos en el Edge (Capa de Preprocesamiento):**
-   - **Implementación de Microservicios en Edge:**
-     - Los microcontroladores ESP32-Wroom  actuarán como nodos edge, procesando los datos de glucosa en tiempo real.
-     - Se implementarán microservicios para filtrar datos, eliminar lecturas anómalas y normalizar las entradas antes de tomar decisiones automatizadas, como ajustar los parámetros de medición o emitir alertas.
-   - **Toma de Decisiones en el Edge:**
-     - Basado en los datos recolectados, el sistema podrá tomar decisiones inmediatas, como activar alarmas si los niveles de glucosa están fuera de los rangos seguros.
-     - La lógica de toma de decisiones reducirá la latencia al evitar enviar todos los datos a la nube, mejorando la eficiencia del sistema y asegurando una respuesta rápida ante situaciones críticas.
+    -	**Descripción:** El ESP32 es un microcontrolador de alto rendimiento con capacidades Wi-Fi y Bluetooth integradas. Es el cerebro del sistema, responsable de procesar los datos del sensor, controlar la interfaz de usuario, y manejar la comunicación con la nube.  
 
-3. **Gestión de Datos en el Fog (Capa de Preprocesamiento):**
-   - **Controladores Fog:**
-     - Un dispositivo fog más robusto o un servidor local gestionará la integración de los datos provenientes de múltiples nodos edge, consolidando la información de diferentes pacientes o sensores.
-     - APIs serán implementadas para la comunicación entre los nodos edge y la capa de almacenamiento en la nube o el servidor local.
-   - **Filtrado y Normalización Avanzada:**
-     - El dispositivo fog ejecutará procesos de agregación de datos de múltiples sensores y aplicará algoritmos más complejos que no pueden realizarse en los dispositivos edge, mejorando la precisión de las lecturas y el análisis de tendencias en los niveles de glucosa.
+    -	Función:  
+        	Recepción de datos del sensor CNY 70.  
+        	Procesamiento de los datos de glucosa.  
+        	Envío de los datos procesados a un servidor en la nube.  
+        	Control del encendido del dispositivo a través del panel táctil.  
+  
+2.	**Sensor Óptico CNY 70**  
 
-4. **Transmisión y Almacenamiento de Datos:**
-   - **Optimización de la Transmisión:**
-     - Los datos preprocesados se transmitirán de manera eficiente a la nube o a un servidor centralizado solo cuando sea necesario, asegurando que se envíen únicamente los datos relevantes para optimizar el uso de ancho de banda y almacenamiento.  
+    -	**Descripción:** El CNY 70 es un sensor reflectivo infrarrojo que se utiliza para detectar la concentración de glucosa en una muestra de sangre. Funciona emitiendo luz infrarroja y midiendo la cantidad de luz reflejada, la cual varía según la concentración de glucosa.  
 
-5. **Monitoreo y Control Remoto:**
-   - Los usuarios podrán monitorear los niveles de glucosa de manera remota a través de una aplicación web o app móvil conectada a la nube.
-   - El sistema también podrá generar alertas automáticas para niveles de glucosa críticos, notificando a los usuarios o cuidadores en tiempo real para intervención inmediata.
+      -	Función:  
+	Detección de los niveles de glucosa en sangre.  
+	Generación de una señal analógica que es enviada al ESP32 para su procesamiento.  
+
+3.	**Panel Táctil**  
+
+    -	**Descripción:** Un panel táctil capacitivo que permite a los usuarios encender y controlar el dispositivo de manera intuitiva y sencilla.  
+
+    -	Función:  
+	Encendido del dispositivo al detectar la interacción del usuario.  
+	Posible interacción adicional para seleccionar modos de operación o visualizar resultados.  
+
+4.	**Pantalla LCD (Opcional)**  
+
+    -	**Descripción:** Una pequeña pantalla LCD podría ser utilizada para mostrar los resultados de la medición de glucosa y el estado del dispositivo.  
+
+    -	Función:  
+	Visualización en tiempo real de los niveles de glucosa.  
+	Visualización de mensajes de estado o alertas.  
+
+5.	**Conectividad Wi-Fi**  
+
+    -	**Descripción:** La capacidad Wi-Fi del ESP32 permite que el dispositivo se conecte a internet y envíe los datos de glucosa a una plataforma en la nube.  
+
+    -	Función:  
+        	Sincronización automática de los datos con una base de datos en la nube.  
+        	Posibilidad de enviar alertas al teléfono móvil del usuario en caso de niveles de glucosa fuera de rango.  
+
+6.	**Fuente de Alimentación**
+
+    -	**Descripción:** El dispositivo será alimentado por una batería recargable, con posibilidad de recarga mediante un puerto USB.  
+
+    -	Función:  
+	Proveer energía al ESP32, sensor CNY 70, panel táctil y otros componentes del dispositivo.  
+	Posibilidad de integrar un indicador de nivel de batería en la interfaz del dispositivo.  
+
 
 ---
 
 ### Resultados Esperados:
 
-1. **Capacidad de Implementación de Edge y Fog Computing:**
-   - Los estudiantes deben demostrar que son capaces de diseñar e implementar una solución IoT que utilice edge y fog computing para procesar datos localmente y tomar decisiones en tiempo real.
+1.	**Mediciones Precisas y Confiables:**  
+	El prototipo proporcionará mediciones precisas de los niveles de glucosa en sangre, con un margen de error mínimo, gracias al preprocesamiento de datos que incluye filtrado, calibración, y detección de anomalías.  
 
-2. **Desarrollo de Microservicios para IoT:**
-   - Implementación de microservicios que operan autónomamente en los dispositivos edge para gestionar tareas complejas como el control de riego basado en las condiciones ambientales.
 
-3. **Gestión Avanzada de Datos en el Edge:**
-   - Aplicación de técnicas de filtrado y normalización de datos, asegurando que solo la información relevante y procesada sea transmitida a la nube.
+2.	**Monitoreo en Tiempo Real:**  
+	El dispositivo permitirá a los usuarios obtener lecturas en tiempo real de sus niveles de glucosa, con la posibilidad de visualizar los resultados instantáneamente en una pantalla o a través de una aplicación móvil conectada a la nube.  
+
+3.	**Conectividad y Acceso Remoto:**  
+	Los datos de glucosa procesados serán enviados a una plataforma en la nube, permitiendo a los usuarios y a sus médicos acceder a un historial completo de mediciones desde cualquier lugar, facilitando un mejor control y seguimiento de la salud.  
+
+4.	**Interfaz de Usuario Intuitiva:**  
+o	El panel táctil permitirá a los usuarios encender el dispositivo y posiblemente seleccionar diferentes modos de operación de manera sencilla, mejorando la experiencia de uso.  
+
+5.	**Alerta y Notificación:**   
+	En caso de detectar niveles de glucosa fuera de los rangos normales, el dispositivo enviará alertas instantáneas al usuario o a su médico, permitiendo una respuesta rápida ante situaciones potencialmente peligrosas.  
+
+6.	**Optimización del Uso de Energía:**  
+	El dispositivo estará diseñado para ser eficiente en términos de consumo de energía, con opciones de apagado automático y un sistema de encendido mediante el panel táctil, prolongando la vida útil de la batería.  
+
+7.	**Base para Desarrollo Futuro:**  
+	El prototipo servirá como una base sólida para futuros desarrollos, permitiendo la integración de funcionalidades adicionales, como análisis predictivo, conexión con otros dispositivos médicos, o personalización según las necesidades del usuario.
 
 ---
 
 ### Tecnologías Utilizadas:
 
-- **Microcontroladores:** ESP32-Wroom.
-- **Sensores:** Sensores de glucosa no invasivos.
+- **Microcontroladores:** [ESP32-Wroom](https://www.espressif.com/en/products/modules/esp32)
+- **Sensores:** [CNY-70](../capa-de-preprocesamiento-grupo-opalo/B%20investigacion/Datasheet-CNY70.PDF)  
+- **Sensor touch.**
 - **Frameworks:** C++ para el desarrollo de hardware y para la gestión de tareas en tiempo real.
 - **Herramientas de Desarrollo:** Visual Studio Code con PlatformIO
 - **Fog Computing:** Microcomputadoras, microservidores, etc.
 
 ---
 
-### Desarrollo de las Semanas:
 
-#### Semana 15 (12/08 - 18/08): Introducción a Fog y Edge Computing
-
-**Objetivo Principal:** Comenzar con la implementación de las bases del sistema IoT, enfocándose en la configuración del entorno y la comprensión de las estrategias para distribuir la carga computacional entre el edge y el fog.
-
-- **Lunes (12/08):**
-  - **Tema:** Introducción a Fog y Edge Computing.
-  - **Actividades:**
-    - Explicación de los conceptos básicos de Fog y Edge Computing.
-    - Configuración del entorno de desarrollo con Visual Studio Code y PlatformIO.
-    - Exploración de casos de uso en IoT que requieren procesamiento en el edge.
-
-- **Miércoles (14/08):**
-  - **Tema:** Implementación inicial en dispositivos Edge.
-  - **Actividades:**
-    - Comienzo del desarrollo de microservicios básicos en el ESP32-Wroom.
-    - Configuración de sensores (humedad, temperatura, luz) y prueba de recolección de datos.
-    - **Tarea:** Continuar el desarrollo en casa, implementando la lógica básica de recolección de datos y toma de decisiones simple (por ejemplo, activar riego si la humedad es baja).
-
-**Entrega de la Semana:**
-- Entorno configurado.
-- Microservicios básicos funcionando en los dispositivos edge, recolectando y procesando datos simples.
-
----
-
-#### Semana 16 (19/08 - 25/08): Microservicios en Dispositivos Edge
-
-**Objetivo Principal:** Desarrollar microservicios más complejos que funcionen de manera autónoma en los dispositivos edge y conecten con la arquitectura de fog computing.
-
-- **Lunes (19/08):**
-  - **Tema:** Desarrollo de Microservicios en Edge.
-  - **Actividades:**
-    - Implementación de lógicas de filtrado de datos en el edge.
-    - Optimización de la recolección y procesamiento de datos para mejorar la eficiencia.
-    - Conexión entre diferentes nodos edge (ESP32-Wroom) para compartir y comparar datos recolectados.
-
-- **Miércoles (21/08):**
-  - **Tema:** Integración con Fog Computing.
-  - **Actividades:**
-    - Configuración de un nodo fog (puede ser un microcontrolador más robusto o un mini-servidor) para gestionar los datos recolectados por los nodos edge.
-    - Desarrollo de APIs simples para permitir la comunicación entre los nodos edge y el fog.
-    - **Tarea:** Optimizar la comunicación y asegurar que los datos procesados en el edge se transmitan correctamente al fog.
-
-**Entrega de la Semana:**
-- Microservicios más avanzados en los dispositivos edge.
-- Nodo fog configurado y conectado con los dispositivos edge.
-- Comunicación básica establecida entre edge y fog.
-
----
-
-#### Semana 17 (26/08 - 01/09): Controladores Fog y API para la Gestión de Datos
-
-**Objetivo Principal:** Finalizar el sistema integrando todas las partes y optimizando el procesamiento y la transmisión de datos. Preparar el sistema para su conexión con la capa de almacenamiento.
-
-- **Lunes (26/08):**
-  - **Tema:** Desarrollo de Controladores Fog y Lógicas de Filtrado.
-  - **Actividades:**
-    - Implementación de controladores fog que gestionen el procesamiento avanzado de datos (agregación, filtrado avanzado).
-    - Optimización de la lógica de filtrado y normalización de datos en el edge para asegurar que solo los datos relevantes se envíen al fog.
-    - Desarrollo de APIs para integrar y facilitar la transmisión de datos a la capa de almacenamiento o la nube.
-
-- **Miércoles (28/08):**
-  - **Tema:** Integración Final y Optimización del Sistema.
-  - **Actividades:**
-    - Realización de pruebas integradas para asegurar que todos los componentes (edge, fog, APIs) funcionen en conjunto sin problemas.
-    - Depuración y mejora de la eficiencia del sistema.
-    - **Preparación para la siguiente unidad:** Trabajar en la conexión del sistema con la capa de almacenamiento y procesamiento en la nube.
-    - **Tarea:** Documentar el proyecto hasta el punto alcanzado y preparar una presentación del avance.
-
-**Entrega de la Semana:**
-- Sistema IoT completamente funcional con nodos edge y fog operativos.
-- Controladores fog y APIs implementados y probados.
-- Preparación para la siguiente etapa del proyecto (integración con la nube).
-
----
-
-Este README.md proporciona una estructura clara y detallada para guiar a los estudiantes a través del desarrollo del proyecto, asegurando que comprendan las interacciones entre las distintas capas del sistema IoT, desde la percepción de datos en el edge, pasando por el procesamiento en el fog, hasta la transmisión y almacenamiento en la nube.
 
 
 
