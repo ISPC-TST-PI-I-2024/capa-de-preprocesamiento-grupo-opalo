@@ -1,4 +1,4 @@
-![alt_tex](../E%20Recursos/caratula.png)  
+![alt_tex](/E%20Recursos/caratulaPI.png)  
 # Proyecto "Dispositivo IoT para Monitoreo Continuo de Glucosa en Pacientes Diabéticos"
   
   ## Profesor: CRISTIAN GONZALO VERA
@@ -83,9 +83,9 @@ Este repositorio contiene la documentación y el código fuente para el prototip
 - Clonar este repositorio y abrir el proyecto en VSCode.
 
 **Pasos para la Configuración:**
-1. **Conectar el Sensor:** Conectar el sensor de glucosa al ESP32 WROOM según el esquema de pines proporcionado en la carpeta `hardware`.
+1. **Conectar el Sensor:** Conectar el sensor de glucosa al ESP32 WROOM según el esquema de pines proporcionado en la carpeta `prototipo`.
 2. **Cargar el Código:** Compilar y cargar el código fuente en el ESP32 WROOM utilizando PlatformIO.
-3. **Configurar la Red:** Configurar los parámetros de red (SSID, contraseña) en el archivo `config.h`.
+3. **Configurar la Red:** Configurar los parámetros de red (SSID, contraseña) en el archivo `configuracion`.
 4. **Ejecutar el Prototipo:** Encender el dispositivo y verificar que los datos se transmiten correctamente a la nube.
 
 ### 7. **Futuras Mejoras**
@@ -96,11 +96,11 @@ Este repositorio contiene la documentación y el código fuente para el prototip
 
 ## Contribuciones
 
-Este prototipo es una versión preliminar, y las contribuciones son bienvenidas. Por favor, revisa la guía de contribuciones en el archivo `CONTRIBUTING.md` para más detalles.
+Este prototipo es una versión preliminar, y las contribuciones son bienvenidas.
 
 ## Licencia
 
-Este proyecto está bajo la licencia ISPC. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está bajo la licencia ISPC.
 
 ## Recursos Adicionales
 
