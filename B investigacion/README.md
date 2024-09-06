@@ -85,5 +85,5 @@ La capa CLOUD es la última etapa en el procesamiento de datos, encargada del al
  Desarrollar una arquitectura escalable que permita la integración de múltiples dispositivos y el manejo de grandes volúmenes de datos.  
      
  ## **Conclusión**
-    La implementación de un sistema IoT para el monitoreo de glucosa basado en una arquitectura de procesamiento en capas (EDGE, FOG y CLOUD) es fundamental para asegurar un análisis eficiente y en tiempo real de los datos, garantizando al mismo tiempo la seguridad y privacidad de la información. Este enfoque no solo mejora la calidad del monitoreo de salud, sino que también permite una intervención médica más rápida y precisa.
+### *La implementación de un sistema IoT para el monitoreo de glucosa basado en una arquitectura de procesamiento en capas (EDGE, FOG y CLOUD) es fundamental para asegurar un análisis eficiente y en tiempo real de los datos, garantizando al mismo tiempo la seguridad y privacidad de la información. Este enfoque no solo mejora la calidad del monitoreo de salud, sino que también permite una intervención médica más rápida y precisa.*
 
