@@ -18,7 +18,7 @@
 - Nahuel Velez ([GitHub](https://github.com/Lucasmurua19))
 - Marcos Bordon Rios ([GitHub](https://github.com/Marcos-BR-03))
 - Tiziano Paez ([GitHub](https://github.com/tpaez))
-
+- Joaquin Zalazar ([GitHub](https://github.com/breaakerr))
 
 ## Proyecto IoT: Dispositivo de Monitoreo de Glucosa
 -  ### Descripción General:  
